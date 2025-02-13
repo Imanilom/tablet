@@ -52,7 +52,7 @@ class HomeScreen extends StatelessWidget {
               child: Column(
                 children: [
                   Expanded(
-                    child: Image.asset(menu[index]['image']!, fit: BoxFit.cover),
+                    child: Image.network(menu[index]['image']!, fit: BoxFit.cover),
                   ),
                   Padding(
                     padding: EdgeInsets.all(8.0),
