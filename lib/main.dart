@@ -86,7 +86,7 @@ class _DetailScreenState extends State<DetailScreen> {
       appBar: AppBar(title: Text("Detail Makanan")),
       body: Column(
         children: [
-          Image.asset(widget.food['image']!, height: 200, fit: BoxFit.cover),
+          Image.network(widget.food['image']!, height: 200, fit: BoxFit.cover),
           SizedBox(height: 10),
           Text(widget.food['name']!, style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
           SizedBox(height: 10),
